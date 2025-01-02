@@ -1,41 +1,137 @@
-<!-- @format -->
-# Welcome to The AI Guild 🚀
 
-**This code is a part of a module in our vibrant AI community 🚀[Join the AI Guild Community](https://bit.ly/ai-guild-join), where like-minded entrepreneurs and programmers come together to build real-world AI-based solutions.**
+# PDF RAG Processing Toolkit
 
-### What is The AI Guild?
-The AI Guild is a collaborative community designed for developers, tech enthusiasts, and entrepreneurs who want to **build practical AI tools** and solutions. Whether you’re just starting or looking to level up your skills, this is the place to dive deeper into AI in a supportive, hands-on environment.
+**Description**: A comprehensive toolkit for processing and categorising PDFs using advanced techniques, optimised for document intelligence workflows.
 
-### Why Join Us?
-- **Collaborate with Like-Minded Builders**: Work alongside a community of individuals passionate about AI, sharing ideas and solving real-world problems together.
-- **Access to Exclusive Resources**: Gain entry to our Code & Template Vault, a collection of ready-to-use code snippets, templates, and AI projects.
-- **Guided Learning Paths**: Follow structured paths, from AI Basics for Builders to advanced classes like AI Solutions Lab, designed to help you apply your knowledge.
-- **Weekly Live Calls & Q&A**: Get direct support, feedback, and guidance during live sessions with the community.
-- **Real-World AI Projects**: Work on projects that make an impact, learn from others, and showcase your work.
+---
 
-### Success Stories
-Here’s what some of our members are saying:
-- **"Joining The AI Guild has accelerated my learning. I’ve already built my first AI chatbot with the help of the community!"**
-- **"The live calls and feedback have been game-changers. I’ve implemented AI automation in my business, saving hours each week."**
+## Table of Contents
 
-### Who is This For?
-If you’re eager to:
-- Build AI tools that solve real problems
-- Collaborate and learn from experienced AI practitioners
-- Stay up-to-date with the latest in AI development
-- Turn your coding skills into actionable solutions
+1. [Overview](#overview)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Features](#features)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Credits](#credits)
+8. [Contact](#contact)
 
-Then **The AI Guild** is the perfect fit for you.
+---
 
-### Frequently Asked Questions
-- **Q: Do I need to be an expert to join?**
-  - **A:** Not at all! The AI Guild is designed for all skill levels, from beginners to advanced developers.
-- **Q: Will I get personalized support?**
-  - **A:** Yes! You’ll have access to live Q&A sessions and direct feedback on your projects.
-- **Q: What kind of projects can I work on?**
-  - **A:** You can start with small projects like chatbots and automation tools, and progress to more advanced AI solutions tailored to your interests.
+## Overview
 
-### How to Get Started
-Want to dive deeper and get the full experience? 🚀[Join the AI Guild Community](https://bit.ly/ai-guild-join) and unlock all the benefits of our growing community.
+This repository contains modules for efficiently managing, processing, and categorising PDF documents. The toolkit leverages state-of-the-art techniques such as Dense Passage Retrieval (DPR) and reranking methods to optimise workflows. 
 
-We look forward to seeing what you’ll build with us!
+### Key Modules
+- `dpr_technique.py`: Implements the Dense Passage Retrieval (DPR) technique.
+- `categorizer.py`: Provides tools for categorising PDF documents based on content.
+- `pdf-rag-clean.py`: Cleans and processes PDFs for subsequent analysis.
+- `helper_utils.py`: A collection of utility functions to support the main modules.
+- `reranking.py`: Implements reranking algorithms to improve search result relevance.
+
+---
+
+## Installation
+
+### Prerequisites
+- Python 3.8 or higher.
+- Recommended: Virtual environment for dependency isolation.
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/KarlXMagnusson/pdf-rag-processing.git
+
+	2.	Navigate to the project directory:
+
+cd pdf-rag-processing
+
+
+	3.	Install required dependencies:
+
+pip install -r requirements.txt
+
+Usage
+
+Module Details
+	1.	DPR Technique:
+	•	Implements dense passage retrieval for efficient querying.
+	•	Example usage:
+
+python dpr_technique.py
+
+
+	2.	Categoriser:
+	•	Categorises documents based on content metadata.
+	•	Example usage:
+
+python categorizer.py
+
+
+	3.	PDF Cleaning:
+	•	Cleans and prepares PDF files for analysis.
+	•	Example usage:
+
+python pdf-rag-clean.py
+
+
+	4.	Helper Utilities:
+	•	Provides reusable functions for other modules.
+	•	Not typically executed independently.
+	5.	Reranking:
+	•	Improves retrieval results via reranking.
+	•	Example usage:
+
+python reranking.py
+
+Features
+	•	Advanced PDF document preprocessing.
+	•	Categorisation tools leveraging metadata and content.
+	•	Dense Passage Retrieval for optimal query handling.
+	•	Reranking to improve search result accuracy.
+	•	Modular design for easy integration and customisation.
+
+Contributing
+
+Contributions to this project are welcome. Please follow these steps to contribute:
+	1.	Fork the repository.
+	2.	Create a feature branch:
+
+git checkout -b feature-name
+
+
+	3.	Commit your changes:
+
+git commit -m "Add feature-name"
+
+
+	4.	Push to your branch:
+
+git push origin feature-name
+
+
+	5.	Create a pull request for review.
+
+Code of Conduct
+
+By participating, you agree to abide by the Code of Conduct.
+
+License
+
+This project is licensed under the MIT License.
+
+Credits
+
+Special thanks to Paulo for their invaluable contributions to this project. Paulo’s insights and expertise were crucial in the development and refinement of the tools provided in this repository.
+
+Contact
+
+For further assistance or enquiries, please contact:
+	•	Author: K Tage M
+	•	GitHub: KarlXMagnusson
+	•	Email: tage@embedded-computing.eu
+
+Acknowledgements
+
+This project is part of educational course by Paulo C, check his profile and community for deeper insights.
+

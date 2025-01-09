@@ -1,0 +1,14 @@
+services:
+  libreoffice-converter:
+    build: 
+      context: ./src/libreoffice_docker
+      dockerfile: Dockerfile
+    ports:
+      - "2002:2002"
+    restart: unless-stopped
+    # Healthcheck
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:2002/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
